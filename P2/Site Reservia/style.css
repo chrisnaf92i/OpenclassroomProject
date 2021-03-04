@@ -1,0 +1,116 @@
+/* Style générale */
+body
+{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+
+    margin: auto;
+
+    width: 1400px;
+}
+
+/* En-tête */
+header
+{
+    display:flex;
+    position:relative;
+}
+
+/* Navigation */
+nav
+{
+    display: flex;
+    align-items: flex-end; 
+    position: absolute;
+    right: 0px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+a
+{
+    margin-right: 25px;
+    text-decoration: none;
+    color:black;
+
+}
+
+nav :hover
+{
+    color:#0065FC;
+}
+
+#inscription
+{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+
+/* Recherche détaillé */
+.filtres
+{
+    background-color: #F2F2F2  ;
+    border:none;
+    border-radius: 45px;
+}
+
+.filtres .fas
+{
+    color: #0065FC;
+    border-radius:45px;;
+    background-color: #DEEBFF ;
+    padding:5px;
+}
+
+#search_zone
+{
+    border-collapse: collapse;
+}
+
+.fa-info-circle
+{
+    color:#0065FC;
+}
+
+/* Hébergement */
+#sec_hebergement
+{
+    display: flex;
+}
+
+#liste_hebergement
+{
+    display: flex;
+    background-color: #F2F2F2;
+    width:auto;
+    border-radius: 25px;
+    width:800px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hébergement
+{
+    padding:5px;
+    margin-top:10px;
+    background-color: white;
+    border-radius:25px;
+    width:240px;
+}
+
+.img_hebergement
+{
+    width:240px;
+    height:120px;
+    border-radius:25px 25px 0px 0px;
+}
+
+article h3
+{
+    margin:0px;
+}
