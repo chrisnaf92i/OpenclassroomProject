@@ -172,6 +172,15 @@ aside
     margin:3px;
 }
 
+.fa-star
+{
+    color:#F2F2F2
+}
+.selected
+{
+    color:#0065FC;
+}
+
 /* Section Activité */
 #all_activity
 {
@@ -296,14 +305,7 @@ footer
         margin:auto;
         
     }
-    .fa-star
-    {
-        color:#F2F2F2
-    }
-    .selected
-    {
-        color:#0065FC;
-    }
+
     footer
     {
         flex-direction: column;
