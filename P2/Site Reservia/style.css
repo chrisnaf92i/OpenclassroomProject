@@ -54,8 +54,8 @@ nav :hover
 /* Recherche détaillé */
 .filtres
 {
-    background-color: #F2F2F2  ;
-    border:none;
+    
+    border:1px solid #F2F2F2;
     border-radius: 45px;
 }
 
@@ -141,6 +141,11 @@ article h3
     padding-right: 25px;
 }
 
+.des-pop
+{
+    padding-left: 25px;
+}
+
 aside
 {
     background-color:#F2F2F2;
@@ -213,4 +218,122 @@ footer
 .info 
 {
     margin-right: 200px;
+}
+
+/* Media Queries Phone */
+@media screen and (max-width:411px)
+{
+    body
+    {
+        margin:auto;
+        width:auto;
+    }
+    /* En tête */
+    header
+    {
+        flex-direction: column;
+        padding-bottom:0px;
+    }   
+    header img
+    {
+        width:150px
+    }
+
+    /* Navigation */
+    nav
+    {
+        position: relative;
+    }
+
+
+    /* Zone de Recherche */
+    #recherche
+    {
+        width:370px;
+        margin:auto;
+    }
+    #recherche h1
+    {
+        font-size: 25px;
+    }
+
+
+    /* Les Hébergement */
+    #sec_hebergement
+    {
+        flex-direction: column-reverse;
+    }
+    #liste_hebergement
+    {
+        background-color: white;
+        margin:auto;
+    }
+
+    #title_popular
+    {
+        margin:auto;
+    }
+
+    aside
+    {
+        border-radius: 0px;
+        margin:auto;
+        width:350px;
+    }
+
+    .hébergement
+    {
+        box-shadow:1px 3px 3px black;
+        margin:auto;
+    }
+
+    /* Les hébergement populaire */
+    .popular_hebergement
+    {
+        box-shadow:1px 1px 3px black;
+        width:330px;
+
+        margin:auto;
+        
+    }
+    .fa-star
+    {
+        color:#F2F2F2
+    }
+    .selected
+    {
+        color:#0065FC;
+    }
+    footer
+    {
+        flex-direction: column;
+    }
+
+    /* les activités */
+    #all_activity
+    {
+        flex-direction: column;
+    }
+
+    .activity img
+    {
+        width:300px;
+        height:125px;
+        border-radius:25px 25px 0px 0px;
+        margin:15px;
+        margin:0px;
+    }
+    .double_activity img
+    {
+        width:300px;
+        height:125px;
+        border-radius:25px 25px 0px 0px;
+        margin:15px;
+        margin:0px;
+    }
+
+    .info
+    {
+        margin:auto;
+    }
 }
