@@ -69,9 +69,37 @@ nav :hover
 
 #search_zone
 {
-    border-collapse: collapse;
+    display:flex;
 }
 
+#location-btn
+{
+    border-radius: 13px 0px 0px 13px;
+    border:none;
+    padding: 10px;
+}
+
+#searchTextZone
+{
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+
+#search-btn-mobile
+{
+    display:none;
+    background-color: #0065FC;
+    border-radius: 0px 13px 13px 0px;
+    border:none;
+}
+
+#search-btn-pc
+{
+    background-color: #0065FC;
+    border:none;
+    border-radius: 0px 13px 13px 0px;
+}
 .fa-info-circle
 {
     color:#0065FC;
@@ -103,7 +131,7 @@ nav :hover
 
 .hébergement
 {
-    padding:5px;
+    padding:0px;
     margin-top:10px;
     background-color: white;
     border-radius:25px;
@@ -124,8 +152,12 @@ article h3
 /* Les hébergement populaire */
 #titre_populaire
 {
-    display: flex;
     justify-content: space-between;
+}
+
+#titre_populaire h2
+{
+    display:flex;
 }
 
 #titre_populaire h1
@@ -235,7 +267,7 @@ footer
     body
     {
         margin:auto;
-        width:auto;
+        width: 400px;
     }
     /* En tête */
     header
@@ -258,7 +290,7 @@ footer
     /* Zone de Recherche */
     #recherche
     {
-        width:370px;
+        width:340px;
         margin:auto;
     }
     #recherche h1
@@ -266,6 +298,14 @@ footer
         font-size: 25px;
     }
 
+    #search-btn-pc
+    {
+        display:none;
+    }
+    #search-btn-mobile
+    {
+        display:block;
+    }
 
     /* Les Hébergement */
     #sec_hebergement
@@ -294,6 +334,7 @@ footer
     {
         box-shadow:1px 3px 3px black;
         margin:auto;
+        margin-bottom: 15px;
     }
 
     /* Les hébergement populaire */
@@ -303,13 +344,9 @@ footer
         width:330px;
 
         margin:auto;
-        
+        margin:15px;
     }
 
-    footer
-    {
-        flex-direction: column;
-    }
 
     /* les activités */
     #all_activity
@@ -322,7 +359,6 @@ footer
         width:300px;
         height:125px;
         border-radius:25px 25px 0px 0px;
-        margin:15px;
         margin:0px;
     }
     .double_activity img
@@ -330,12 +366,12 @@ footer
         width:300px;
         height:125px;
         border-radius:25px 25px 0px 0px;
-        margin:15px;
         margin:0px;
     }
 
-    .info
+    footer
     {
-        margin:auto;
+        padding-left:25px;
+        flex-direction: column;
     }
 }
