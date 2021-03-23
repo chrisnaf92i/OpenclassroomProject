@@ -7,12 +7,9 @@
         <title>Site Reservia</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/e4cfeb22a7.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
  
     </head>
     <body>
-        <!-- date de démarage : 2 mars 2021 -->
-        <!-- cursor pointer -->
         <header>
             <img src="images/logo/Reservia.svg" alt="">
 
@@ -25,18 +22,17 @@
             </nav>
         </header>
         <div id="recherche">
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             
             <p>En plein centre ville ou en pleine nature</p>
             
             <br>
 
-            <form action="truc.php" method="POST">
+            <form action="truc.php" method="post">
                 
                 <span id = "search_zone"> 
                     <button id="location-btn"><i class="fas fa-map-marker-alt"></i></button>
-                    <input type="search" placeholder="Marseille, France" id="
-                    ">
+                    <input type="search" placeholder="Marseille, France" id="searchTXT">
                     <button id="search-btn-pc">Search</button>
                     <button id="search-btn-mobile"><i class="fas fa-search"></i></button>
                 </span>
@@ -60,12 +56,12 @@
 
         <br>
 
-        <section id="sec_hebergement">
+        <section id = "sec_hebergement">
 
             <div id="liste_hebergement">
-                <h2>Hébergement à Marseille</h2>
+                <h1>Hébergement à Marseille</h1>
 
-                <div id="all_hebergement">
+                <div id= "all_hebergement">
                     <article class = "hébergement">
                         <a href="#">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class = "img_hebergement" alt="">
@@ -94,8 +90,8 @@
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
-                            </a>               
                             </p>
+                        </a>               
                     </article>
                     
                     <article class="hébergement">
@@ -111,7 +107,6 @@
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star"></i>
                             </p>
-
                         </a>
                     
                     </article>
@@ -144,7 +139,6 @@
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star"></i>
                             </p>
-
                         </a>
                     </article>
                     <article class="hébergement">
@@ -152,15 +146,17 @@
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class = "img_hebergement" alt="">
                             <p>
                                 <h3>Hôtel chez Amina</h3>
+                                <br>
                                 Nuit à partir de 96€
+
                                 <br>
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
                                 <i class="fas fa-star selected"></i>
-                            </a>
                             </p>
+                        </a>
                     </article>
                 </div>
                 <a href="#" id = "more"><h2>Afficher plus</h2></a>
@@ -170,31 +166,26 @@
       
             <aside >
                 <div id = "aside-popular">
-                
-                    
-                    <p id="titre_populaire">
-                        <h2>
-                            <div>Les plus populaire</div>
-                            <div><i class="fas fa-chart-line"></i></div>
-                        </h2>
-                    </p>
-
-                    <div id = "all_popular_hebergement">
+                    <div id="title_popular">
+                        <h2>Les plus populaires <span><i class="fas fa-chart-line"></i></span></h2>
+                    </div>
+                    <div id="all_popular_hebergement">
                         <article>
                             <a href="#" class = "popular_hebergement">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                                 <div class = "des-pop">
-                                    <p>
+                                    <p>                                        
                                         <h3>Hôtel le soleil du matin</h3>
                                         Nuit à partir de 128€
+                                        <br>
                                         <br>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
-                                    </div>
                                     </p>
+                                </div>
                             </a>
                         </article>
     
@@ -205,6 +196,7 @@
                                     <p>
                                         <h3>Au coeur de l'eau chambre d'hôte</h3>
                                         Nuit à partir de 71€
+                                        <br>
                                         <br>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
@@ -220,8 +212,9 @@
                                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                                 <div class = "des-pop">
                                     <p>
-                                        <h3>Hôtel tout bleu et blanc</h3>
-                                        Nuit à partir de 68€                                    
+                                        Nuit à partir de 68€
+                                        <h3> Hôtel tout bleu et blanc </h3>
+                                        <br>
                                         <br>
                                         <i class="fas fa-star selected"></i>
                                         <i class="fas fa-star selected"></i>
@@ -238,7 +231,7 @@
         </section>
 
         <section id = "list_activity">
-            <h2>Activité à Marseille</h2>
+            <h1>Activité à Marseille</h1>
             <div id = "all_activity">
                 <div class = "activity">
                     <a href="#">
