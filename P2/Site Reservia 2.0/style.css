@@ -1,0 +1,106 @@
+/* Variable */
+:root
+{
+    --principal-color:#0065FC;
+    --secondar-color:#DEEBFF;
+    --terciar-color:#DEEBFF;
+}
+
+/* Style de la page */
+body
+{
+    margin: auto;
+    width:95%;
+}
+
+/* En tête */
+header
+{
+    display:grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+header img
+{
+    width:150px;
+    grid-column: 1;
+}
+
+header a
+{
+    margin-top:5px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    padding-top:25px;
+
+}
+
+header a:hover
+{
+    border-top: 1px solid var(--principal-color);
+    color:var(--principal-color);
+}
+
+#inscription:hover
+{
+    border-top:none;
+}
+
+#anchor-heb
+{
+    grid-column: 11;
+}
+
+
+
+
+#anchor-activity
+{
+    grid-column: 12;
+}
+
+
+
+#inscription
+{
+    color:var(--principal-color);
+    grid-column:  13;
+}
+
+
+@media screen and (max-width:425px)
+{
+    /* En tête */
+    header
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #inscription
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #anchor-heb
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #anchor-activity
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    header a:hover
+    {
+        
+        border-top: none;
+        border-bottom: 1px solid var(--principal-color);
+        padding-bottom:10px;
+    }
+    #inscription
+    {
+        border-bottom:none;
+    }
+}
